@@ -16,6 +16,14 @@ The goal is to reduce the time spent reading long commit histories or reviewing 
 
 ---
 
+# 🚀 Live Demo
+
+🔗 **Vercel Deployment**
+
+https://diagnose-sigma.vercel.app/
+
+---
+
 # Inspiration
 
 Understanding a new codebase or catching up on project discussions can take a lot of time. Reading through commits, reviewing documentation, or watching long meeting recordings often slows down development.
