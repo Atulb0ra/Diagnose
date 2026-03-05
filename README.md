@@ -1,48 +1,104 @@
-What it does 🧑🏻‍💻
-Dionysus is a powerful platform designed to simplify developer collaboration. It offers a range of features that make working on code projects more efficient and transparent:
+# 🧠 Diagnose
 
-Automatic Code Documentation: Dionysus automatically generates detailed code documentation, making it easy for both newcomers and experienced developers to understand the project's structure and purpose.
+![Next.js](https://img.shields.io/badge/Next.js-Framework-black?logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-Language-blue?logo=typescript)
+![tRPC](https://img.shields.io/badge/tRPC-API-blue)
+![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?logo=prisma)
+![AssemblyAI](https://img.shields.io/badge/AssemblyAI-Transcription-orange)
+![Groq](https://img.shields.io/badge/Groq-AI-green)
+![Gemini](https://img.shields.io/badge/Gemini-Embeddings-purple)
 
-Codebase Search: With context-aware search capabilities, Dionysus helps you quickly locate specific code components, saving you valuable time and effort.
+Diagnose is an AI-powered platform designed to help developers understand their projects and meetings more efficiently.
 
-Commit Message Summaries: Using AI, Dionysus summarizes commit messages, ensuring that you're always up to date with the latest changes in your repository.
+The application analyzes GitHub repositories, summarizes commit history, and allows developers to ask questions about their codebase. It also processes meeting recordings by generating transcripts, extracting key discussion points, and making them searchable.
 
-Meeting Transcription: Dionysus can transcribe your meetings, extracting key topics and providing a clear record of what was discussed.
+The goal is to reduce the time spent reading long commit histories or reviewing meeting recordings by automatically generating insights that can be quickly explored.
 
-Real-Time Contextual Meeting Search: When you have questions about past meetings, Dionysus offers real-time contextual search, so you can easily find the answers you need.
+---
 
-Collaborative Platform: Team members can work together within the platform, access documentation, review meeting summaries, and interact with codebase-related data, fostering a collaborative and efficient development environment.
+# Inspiration
 
-How we built it 👷🏼‍♂️
-Dionysus was built using the following technology stack:
+Understanding a new codebase or catching up on project discussions can take a lot of time. Reading through commits, reviewing documentation, or watching long meeting recordings often slows down development.
 
-We are using a microservice architecture. We have a frontend using NextJS and a Python backend API that handles all the AI workload. We relied on docker to containerize both our microservices so as to allow for easier development using docker-compose. We no longer need to run the microservices one by one when trying to develop. We can simply run docker-compose up and all our services are up and running.
+Diagnose was built to simplify that process by using AI to extract the most important information from repositories and meetings and present it in a structured way.
 
-AI-powered tools for code analysis and document generation.
-Integration with GitHub for repository management.
-Meeting transcription services for accurate recording of discussions.
-Real-time contextual search to provide instant and relevant information.
-Challenges we ran into 😓
-While building Dionysus, we encountered various challenges, including:
+---
 
-Integrating AI and machine learning into the platform effectively.
-Ensuring real-time updates and accuracy in codebase search and meeting transcriptions.
-Implementing a user-friendly interface that is both powerful and easy to use.
-Accomplishments that we're proud of 👏
-We're proud of what Dionyuis has become—a tool that simplifies the lives of developers and enhances collaboration. The accomplishments we're most proud of include:
+# What it does
 
-Successfully automating code documentation generation.
-Developing context-aware codebase search capabilities.
-Achieving real-time, AI-powered meeting transcription and contextual search.
-What we learned 👩🏼‍🎓
-During the development of Dionysus, we learned valuable lessons about the power of AI in simplifying and enhancing the developer experience. We also gained insights into the importance of user-friendly design and seamless collaboration tools.
+Diagnose provides several features that help developers navigate projects more easily.
 
-What's next for Dionysus 🔮
-In the future, we plan to expand Dionysus's capabilities further. We aim to:
+### GitHub Repository Analysis
+A GitHub repository can be connected to the platform where commits are analyzed and summarized. This makes it easier to understand recent changes without reading every commit manually.
 
-Improve AI algorithms for even more accurate code documentation and search results.
-Add support for more code repository platforms to reach a broader audience of developers.
-Enhance the user interface for an even more intuitive and user-friendly experience.
-We're excited about the potential of Dionysus and the positive impact it can have on the developer community. Stay tuned for upcoming features and improvements!
+### Commit Summaries
+Commit messages and related information are processed using AI models to generate concise summaries of repository activity.
 
-In the demo video I used the audio from the following video: https://www.youtube.com/watch?v=HKdOnFHB4Sg
+### Codebase Q&A
+Questions about the repository can be asked directly inside the platform. The system retrieves relevant information from the repository context and generates answers.
+
+### Meeting Transcription
+Meeting recordings can be processed and converted into transcripts using speech-to-text models.
+
+### Meeting Summaries
+Key discussion points from meetings are automatically extracted and summarized.
+
+### Contextual Meeting Search
+Transcripts and summaries are searchable so specific topics discussed during meetings can be quickly located.
+
+---
+
+# Tech Stack
+
+Diagnose is built using a modern full-stack setup focused on developer productivity.
+
+### Frontend
+- Next.js
+- TypeScript
+- tRPC
+- Tailwind CSS
+- Create T3 App
+
+### Backend
+- TypeScript
+- Prisma ORM
+
+### AI Services
+- AssemblyAI – meeting transcription
+- Groq API – summarization and text generation
+- Gemini API – embeddings for semantic search
+
+---
+
+# How it works
+
+1. A GitHub repository or meeting recording is provided to the platform.
+2. Repository commits are analyzed and summarized using AI models.
+3. Meeting audio is transcribed using AssemblyAI.
+4. Summaries and structured insights are generated using Groq models.
+5. Gemini embeddings are created to enable semantic search and question answering.
+6. All processed information becomes searchable through the dashboard.
+
+---
+
+# Challenges
+
+Building Diagnose required solving several technical challenges:
+
+- handling large amounts of repository and transcript data
+- generating accurate summaries from commits and meetings
+- implementing semantic search using embeddings
+- designing a UI that keeps complex information easy to navigate
+
+---
+
+# Future Improvements
+
+Planned improvements include:
+
+- deeper codebase understanding
+- improved semantic search accuracy
+- support for additional repository platforms
+- enhanced visualization of repository insights
+
+---
