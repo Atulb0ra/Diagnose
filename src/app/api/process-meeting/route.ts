@@ -8,7 +8,9 @@ const bodyParser = z.object({
     projectId : z.string(),
     meetingId : z.string()
 })
-export const maxDuration = 60 * 1000 * 5 // 5 mins
+export const config = {
+  maxDuration: 300 // 5 minutes in seconds
+}
 
 export async function POST(req : NextRequest){
     const {userId} = await auth()
