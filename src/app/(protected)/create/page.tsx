@@ -57,7 +57,7 @@ const CreatePage = () => {
         <div className='mb-35'>
             <div>
                 <h1 className="font-semibold text-2xl">
-                    Link Your Github Reposirtoy
+                    Link Your Github Repository
                 </h1>
                 <p className="text-sm text-muted-forground">
                     Enter the URL of your repositoy to link it to Diagnose
