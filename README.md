@@ -1,6 +1,5 @@
 <img width="1380" alt="Demo" src="https://github.com/Atulb0ra/Diagnose/blob/main/public/diagnose.png">
 
-![image](https://github.com/Atulb0ra/Diagnose/blob/main/public/diagnose.png)
 
 
 # 🧠 Diagnose
