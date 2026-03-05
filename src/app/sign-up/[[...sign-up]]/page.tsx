@@ -3,7 +3,7 @@ import { SignUp } from '@clerk/nextjs'
 export default function Page() {
   return (
     <div className="flex min-h-screen items-center justify-center">
-      <SignUp routing="path" path="/sign-up"/>
+      <SignUp routing="path" path="/sign-up"  forceRedirectUrl="/dashboard" />
     </div>
   )
 }
